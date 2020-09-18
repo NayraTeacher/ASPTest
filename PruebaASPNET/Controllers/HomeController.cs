@@ -29,6 +29,13 @@ namespace PruebaASPNET.Controllers
             return View();
         }
 
+        public IActionResult Cambio()
+        {
+            ViewData["Message"] = "Pagina con cambios para pruebas.";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
